@@ -172,5 +172,8 @@ ul>a:hover {
   list-style: none;
   gap: 1rem;
   justify-content: center;
+}
 
+.menu_main .menu_item {
+  color: #ff6600; 
 }
