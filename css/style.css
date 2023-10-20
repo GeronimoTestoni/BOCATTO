@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fira+Sans:wght@600&family=Lobster&family=Pacifico&family=Rubik+Mono+One&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {}
+
+.header_main {
+
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+video#background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Ajusta el tamaño y la posición del video */
+  z-index: -1;
+}
+
+.header_right {
+  color: antiquewhite;
+
+}
+
+.header_right h2 {
+
+  font-size: 36px;
+  /* Ajusta el tamaño de fuente según tus preferencias */
+  background-image: url(../images/slogan-brasas.jpg);
+  /* Reemplaza con la ruta de tu imagen de fuego */
+  background-size: 100% 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: roastText 2s infinite alternate, flame 1s infinite;
+  -webkit-text-stroke: 1.2px #ffbc2d;
+}
+
+@keyframes roastText {
+  0% {
+    transform: rotate(-1deg);
+  }
+
+  100% {
+    transform: rotate(1deg);
+  }
+}
+
+@keyframes flame {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.header_right h1 {
+  text-align: center;
+  padding: 1rem;
+}
+
+.header_right h1 img {
+  vertical-align: middle;
+  /* Alinea verticalmente la imagen con el texto */
+  max-width: 300px;
+  /* Ajusta el tamaño máximo de la imagen según tus necesidades */
+  height: auto;
+  /* Mantiene la proporción de aspecto de la imagen */
+}
+
+.header_left {
+  margin-top: 2rem;
+  gap: 1rem;
+  color: antiquewhite;
+  text-align: center;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.header_content {
+  position: relative;
+  height: 100vh;
+  /* Ajusta la altura según tus necesidades */
+  overflow: hidden;
+}
+
+.header_content_main {
+
+  position: relative;
+  z-index: 1;
+  /* Coloca el contenido por encima del video */
+  padding: 20px;
+
+}
+
+
+.header_content_main p {
+  font-size: 36px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.header_content_main h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.header_content_main h1 {}
+
+/* Estilos de base para el enlace de ubicación */
+ul>a {
+  margin: 2rem;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #191A1F;
+  /* Color de fondo */
+  color: #fff;
+  /* Color del texto */
+  text-decoration-thickness: ;
+  /* Quita el subrayado del enlace */
+  border: 1px solid #000000;
+  /* Borde */
+  border-color: #ff6600;
+  border-radius: 10px;
+  /* Bordes redondeados */
+  transition: background-color 1s, color 1s;
+  /* Transiciones suaves de color */
+  font-size: 16px;
+  font-weight: bold;
+  /* Texto en negrita */
+  text-shadow: 0 0 10px transparent;
+  /* Sombra de texto inicial */
+}
+
+/* Cambios de estilo al pasar el mouse sobre el enlace */
+ul>a:hover {
+  background-color: #fff;
+  /* Color de fondo al pasar el mouse */
+  color: #080808;
+  /* Color del texto al pasar el mouse */
+  text-shadow: 0 0 10px #ff6600;
+  /* Efecto de destello en la sombra de texto */
+}
+
+.menu_main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 1rem;
+  justify-content: center;
+
+}
